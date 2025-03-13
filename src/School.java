@@ -1,7 +1,7 @@
 
 public class School {
-    private Teacher[] teachers=new Teacher[10];
-    private Student[] students=new Student[10];
+    private Teacher[] teachers=new Teacher[5];
+    private Student[] students=new Student[5];
     private int teachersCount=0;
     private int studentsCount=0;
     School(){}
