@@ -5,9 +5,11 @@ public class Main {
     Teacher teacher1 = new Teacher(1,"Hilbert","Schild",500);
     Teacher teacher2 = new Teacher(2,"James","Gosling",700);
     Teacher teacher3 = new Teacher(3,"John","Doe",600);
+    Teacher teacher4 = new Teacher(4,"David","Backham",800);
     Student student1=new Student(1,"Saidakbar","Nematullayev",2,30000);
-    Student student2=new Student(1,"Ahmad","Temurov",3,40000);
+    Student student2=new Student(2,"Ahmad","Temurov",3,40000);
     Student student3=new Student(1,"Ali","Valiyev",1,25000);
+    Student student4=new Student(3,"Aziz","Abdullayev",2,35000);
     school.addTeacher(teacher1);
     school.addTeacher(teacher2);
     school.addTeacher(teacher3);
@@ -38,6 +40,14 @@ public class Main {
     System.out.println("Earned money: $"+school.getTotalMoneyEarned());
     System.out.println("Spent money: $"+school.getTotalMoneySpent());
     System.out.println();
+
+    student4.pay(8000);
+    System.out.println(student4.getName()+" remained fees: $"+student4.getRemainingFees());
+    teacher4.receiveSalary();
+    System.out.println("Earned money: $"+school.getTotalMoneyEarned());
+    System.out.println("Spent money: $"+school.getTotalMoneySpent());
+    System.out.println();
+
 
 
 
