@@ -6,12 +6,12 @@ public class Teacher extends School {
     private double salary;
     private double salaryEarned;
     private School school;
-    public Teacher(int id, String firstName, String lastName, double salary, School school) {
+
+    public Teacher(int id, String firstName, String lastName, double salary) {
         this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
         this.salary = salary;
-        this.school = school;
     }
     Teacher(){
         salaryEarned=0.0;
@@ -31,11 +31,15 @@ public class Teacher extends School {
     public School getSchool() {
         return school;
     }
+    public void setSchool(School school) {
+        this.school = school;
+    }
+
     public double getSalaryEarned(){
-        return salary;
+        return salaryEarned;
     }
     public void receiveSalary(){
-        return;
+        salaryEarned+=salary;
     }
     @Override
     public String toString() {

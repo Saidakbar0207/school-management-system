@@ -34,8 +34,8 @@ public class Student extends Teacher {
     public double getFessTotal() {
         return fessTotal;
     }
-    public int getRemainingFees(){
-        return 0;
+    public double getRemainingFees(){
+        return fessTotal-=feesPaid;
     }
     public void setGrade(int grade) {
         this.grade = grade;
